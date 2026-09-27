@@ -1,0 +1,339 @@
+{
+  "assignment_type": "code",
+  "students": {
+    "student_A": {
+      "grading": {
+        "type": "code",
+        "tests_passed": 8,
+        "tests_total": 8,
+        "score_pct": 100.0,
+        "test_results": [
+          {
+            "test": 1,
+            "passed": true,
+            "expected": "0",
+            "actual": "0"
+          },
+          {
+            "test": 2,
+            "passed": true,
+            "expected": "1",
+            "actual": "1"
+          },
+          {
+            "test": 3,
+            "passed": true,
+            "expected": "1",
+            "actual": "1"
+          },
+          {
+            "test": 4,
+            "passed": true,
+            "expected": "5",
+            "actual": "5"
+          },
+          {
+            "test": 5,
+            "passed": true,
+            "expected": "55",
+            "actual": "55"
+          },
+          {
+            "test": 6,
+            "passed": true,
+            "expected": "6765",
+            "actual": "6765"
+          },
+          {
+            "test": 7,
+            "passed": true,
+            "expected": "9227465",
+            "actual": "9227465"
+          },
+          {
+            "test": 8,
+            "passed": true,
+            "expected": "12586269025",
+            "actual": "12586269025"
+          }
+        ],
+        "static_checks": {
+          "has_function_def": true,
+          "has_docstring_or_comments": true,
+          "line_count": 13,
+          "uses_bare_except": false
+        }
+      },
+      "feedback": "Great work! All eight test cases passed, and your code meets the static‑check criteria: you defined a function, included docstrings/comments, kept the file concise (13 lines), and avoided bare `except` clauses. The clear documentation and clean structure make your solution easy to read and maintain. To keep building on this momentum, consider adding type hints to your function signature and parameters—this will improve readability for others and help static analysis tools catch potential issues early.",
+      "improvement": {
+        "weak_points": [
+          "No major weak areas detected — keep it up."
+        ],
+        "narrative": "- Pursue an advanced or interdisciplinary elective to broaden your perspective.  \n- Take on a leadership role in a student organization or project to hone teamwork skills.  \n- Set a personal academic goal (e.g., publish a short paper or present at a conference) to push your boundaries."
+      }
+    },
+    "student_B": {
+      "grading": {
+        "type": "code",
+        "tests_passed": 8,
+        "tests_total": 8,
+        "score_pct": 100.0,
+        "test_results": [
+          {
+            "test": 1,
+            "passed": true,
+            "expected": "0",
+            "actual": "0"
+          },
+          {
+            "test": 2,
+            "passed": true,
+            "expected": "1",
+            "actual": "1"
+          },
+          {
+            "test": 3,
+            "passed": true,
+            "expected": "1",
+            "actual": "1"
+          },
+          {
+            "test": 4,
+            "passed": true,
+            "expected": "5",
+            "actual": "5"
+          },
+          {
+            "test": 5,
+            "passed": true,
+            "expected": "55",
+            "actual": "55"
+          },
+          {
+            "test": 6,
+            "passed": true,
+            "expected": "6765",
+            "actual": "6765"
+          },
+          {
+            "test": 7,
+            "passed": true,
+            "expected": "9227465",
+            "actual": "9227465"
+          },
+          {
+            "test": 8,
+            "passed": true,
+            "expected": "12586269025",
+            "actual": "12586269025"
+          }
+        ],
+        "static_checks": {
+          "has_function_def": true,
+          "has_docstring_or_comments": true,
+          "line_count": 13,
+          "uses_bare_except": false
+        }
+      },
+      "feedback": "Great job, student_B! All 8 tests passed, and the static analysis shows you defined a function, included a docstring/comments, kept the file concise (13 lines), and avoided bare `except` clauses. Your code is clean, well‑documented, and robust for the given requirements.  \n\nTo keep raising the bar, consider adding type hints to your function signature and variables. This will improve readability, help catch subtle bugs early, and make your code easier for others (and future you) to use.",
+      "improvement": {
+        "weak_points": [
+          "No major weak areas detected — keep it up."
+        ],
+        "narrative": "- Set a personal learning goal each semester to deepen expertise.  \n- Share knowledge by tutoring peers or presenting in class.  \n- Explore interdisciplinary projects to broaden perspectives.  \n- Reflect regularly on progress and adjust strategies."
+      }
+    },
+    "student_C": {
+      "grading": {
+        "type": "code",
+        "tests_passed": 8,
+        "tests_total": 8,
+        "score_pct": 100.0,
+        "test_results": [
+          {
+            "test": 1,
+            "passed": true,
+            "expected": "0",
+            "actual": "0"
+          },
+          {
+            "test": 2,
+            "passed": true,
+            "expected": "1",
+            "actual": "1"
+          },
+          {
+            "test": 3,
+            "passed": true,
+            "expected": "1",
+            "actual": "1"
+          },
+          {
+            "test": 4,
+            "passed": true,
+            "expected": "5",
+            "actual": "5"
+          },
+          {
+            "test": 5,
+            "passed": true,
+            "expected": "55",
+            "actual": "55"
+          },
+          {
+            "test": 6,
+            "passed": true,
+            "expected": "6765",
+            "actual": "6765"
+          },
+          {
+            "test": 7,
+            "passed": true,
+            "expected": "9227465",
+            "actual": "9227465"
+          },
+          {
+            "test": 8,
+            "passed": true,
+            "expected": "12586269025",
+            "actual": "12586269025"
+          }
+        ],
+        "static_checks": {
+          "has_function_def": true,
+          "has_docstring_or_comments": true,
+          "line_count": 10,
+          "uses_bare_except": false
+        }
+      },
+      "feedback": "Great job! All eight tests passed, and your code meets the static‑check criteria: it includes a function definition, docstring/comments, stays under the line limit, and avoids bare‑except clauses. Your implementation is clean, concise, and well‑documented—exactly what we look for.\n\n**Next step:** enhance readability and robustness by adding type hints to your function signature and parameters. This will make your code self‑documenting and easier for others (and future you) to understand. Keep up the excellent work!",
+      "improvement": {
+        "weak_points": [
+          "No major weak areas detected — keep it up."
+        ],
+        "narrative": "- Set a personal learning goal each semester to deepen expertise.  \n- Share your strengths by mentoring peers or leading a study group.  \n- Explore interdisciplinary projects or electives to broaden your perspective."
+      }
+    },
+    "student_D": {
+      "grading": {
+        "type": "code",
+        "tests_passed": 7,
+        "tests_total": 8,
+        "score_pct": 87.5,
+        "test_results": [
+          {
+            "test": 1,
+            "passed": true,
+            "expected": "0",
+            "actual": "0"
+          },
+          {
+            "test": 2,
+            "passed": true,
+            "expected": "1",
+            "actual": "1"
+          },
+          {
+            "test": 3,
+            "passed": true,
+            "expected": "1",
+            "actual": "1"
+          },
+          {
+            "test": 4,
+            "passed": true,
+            "expected": "5",
+            "actual": "5"
+          },
+          {
+            "test": 5,
+            "passed": true,
+            "expected": "55",
+            "actual": "55"
+          },
+          {
+            "test": 6,
+            "passed": true,
+            "expected": "6765",
+            "actual": "6765"
+          },
+          {
+            "test": 7,
+            "passed": true,
+            "expected": "9227465",
+            "actual": "9227465"
+          },
+          {
+            "test": 8,
+            "passed": false,
+            "expected": "12586269025",
+            "actual": "TIMEOUT"
+          }
+        ],
+        "static_checks": {
+          "has_function_def": true,
+          "has_docstring_or_comments": true,
+          "line_count": 9,
+          "uses_bare_except": false
+        }
+      },
+      "feedback": "Great job, student_D! You passed 7 out of 8 tests and earned an 87.5% score—well done on writing clear, documented code within just nine lines. The only hiccup was **Test 8**, which expected the 50th Fibonacci number `12586269025` but timed out. This suggests your current implementation (likely a naïve recursion) isn’t efficient enough for large inputs.\n\n**Actionable tip:** Replace the recursive approach with an iterative loop or memoized recursion to compute Fibonacci numbers in O(n) time, which will eliminate the timeout on large cases. Keep up the solid work!",
+      "improvement": {
+        "weak_points": [
+          "Efficiency / algorithm complexity (your solution may be too slow for large inputs)."
+        ],
+        "narrative": "- Review core algorithmic concepts and big‑O analysis; use textbooks or online modules to identify typical complexities of sorting, searching, and graph traversals.  \n- Practice solving timed problems on platforms like LeetCode or Codeforces, focusing on selecting the most efficient approach before coding.  \n- Profile your code on large test cases, then refactor using known optimization patterns (e.g., memoization, two‑pointer, divide‑and‑conquer) and compare runtimes."
+      }
+    }
+  },
+  "plagiarism_flags": [
+    {
+      "pair": [
+        "student_A",
+        "student_B"
+      ],
+      "similarity": 0.988,
+      "flagged": true
+    },
+    {
+      "pair": [
+        "student_C",
+        "student_D"
+      ],
+      "similarity": 0.274,
+      "flagged": false
+    },
+    {
+      "pair": [
+        "student_A",
+        "student_D"
+      ],
+      "similarity": 0.231,
+      "flagged": false
+    },
+    {
+      "pair": [
+        "student_B",
+        "student_D"
+      ],
+      "similarity": 0.23,
+      "flagged": false
+    },
+    {
+      "pair": [
+        "student_A",
+        "student_C"
+      ],
+      "similarity": 0.203,
+      "flagged": false
+    },
+    {
+      "pair": [
+        "student_B",
+        "student_C"
+      ],
+      "similarity": 0.202,
+      "flagged": false
+    }
+  ]
+}

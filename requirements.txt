@@ -1,0 +1,3 @@
+sympy>=1.12
+groq>=0.11.0
+python-dotenv>=1.0.0

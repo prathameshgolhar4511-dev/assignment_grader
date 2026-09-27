@@ -1,0 +1,18 @@
+{
+  "student_E": {
+    "answer": "3",
+    "work": "x^2 - 5x + 6 = 0, factor as (x-2)(x-3) = 0, so x=2 or x=3, larger root is 3"
+  },
+  "student_F": {
+    "answer": "2",
+    "work": "x^2 - 5x + 6 = 0, using quadratic formula: x = (5 +/- sqrt(25-24)) / 2 = (5 +/- 1) / 2, roots are 3 and 2, I pick x=2"
+  },
+  "student_G": {
+    "answer": "4",
+    "work": "x^2 - 5x + 6 = 0, 5x = x^2 + 6, x = (x^2+6)/5, guessing x=4: 16-20+6=2 not zero, so x=4"
+  },
+  "student_H": {
+    "answer": "3",
+    "work": ""
+  }
+}

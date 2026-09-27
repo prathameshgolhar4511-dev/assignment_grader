@@ -1,0 +1,642 @@
+{
+  "student_E": {
+    "agent_message": "[MOCK LLM RESPONSE - set GROQ_API_KEY (free) or ANTHROPIC_API_KEY for real generation]\nOverall: The submission demonstrates a reasonable attempt at the problem.\nStrengths: Logical structure is present and core requirements are partially met.\nWeaknesses: Some edge cases / test cases were not handled correctly.\nSuggestion: Review the failing cases listed above and re-trace your logic\nfor those specific inputs before resubmitting.",
+    "tool_trace": [
+      {
+        "mode": "mock",
+        "tool": "grade_submission",
+        "input": {
+          "student_id": "student_E"
+        },
+        "result": {
+          "type": "math",
+          "correct_final_answer": true,
+          "comparison_method": "symbolic_equivalence",
+          "shows_work": true,
+          "score_pct": 100.0
+        }
+      },
+      {
+        "mode": "mock",
+        "tool": "check_plagiarism_for_student",
+        "input": {
+          "student_id": "student_E"
+        },
+        "result": {
+          "flags_involving_student": [
+            {
+              "pair": [
+                "student_E",
+                "student_G"
+              ],
+              "similarity": 0.622,
+              "flagged": false
+            },
+            {
+              "pair": [
+                "student_E",
+                "student_F"
+              ],
+              "similarity": 0.585,
+              "flagged": false
+            },
+            {
+              "pair": [
+                "student_E",
+                "student_H"
+              ],
+              "similarity": 0.0,
+              "flagged": false
+            }
+          ]
+        }
+      },
+      {
+        "mode": "mock",
+        "tool": "generate_feedback",
+        "input": {
+          "student_id": "student_E"
+        },
+        "result": {
+          "feedback": "[MOCK LLM RESPONSE - set GROQ_API_KEY (free) or ANTHROPIC_API_KEY for real generation]\nOverall: The submission demonstrates a reasonable attempt at the problem.\nStrengths: Logical structure is present and core requirements are partially met.\nWeaknesses: Some edge cases / test cases were not handled correctly.\nSuggestion: Review the failing cases listed above and re-trace your logic\nfor those specific inputs before resubmitting."
+        }
+      },
+      {
+        "mode": "mock",
+        "tool": "suggest_improvements",
+        "input": {
+          "student_id": "student_E"
+        },
+        "result": {
+          "weak_points": [
+            "No major weak areas detected — keep it up."
+          ],
+          "narrative": "[MOCK LLM RESPONSE - set GROQ_API_KEY (free) or ANTHROPIC_API_KEY for real generation]\nRecommended focus areas:\n- Revisit the core concept tested by the failing cases.\n- Practice 2-3 similar problems from the same topic.\n- Add basic input validation / edge-case handling to your code."
+        }
+      },
+      {
+        "mode": "mock",
+        "tool": "submit_final_report",
+        "input": {
+          "report": {
+            "student_id": "student_E",
+            "score_pct": 100.0,
+            "feedback": "[MOCK LLM RESPONSE - set GROQ_API_KEY (free) or ANTHROPIC_API_KEY for real generation]\nOverall: The submission demonstrates a reasonable attempt at the problem.\nStrengths: Logical structure is present and core requirements are partially met.\nWeaknesses: Some edge cases / test cases were not handled correctly.\nSuggestion: Review the failing cases listed above and re-trace your logic\nfor those specific inputs before resubmitting.",
+            "improvement": {
+              "weak_points": [
+                "No major weak areas detected — keep it up."
+              ],
+              "narrative": "[MOCK LLM RESPONSE - set GROQ_API_KEY (free) or ANTHROPIC_API_KEY for real generation]\nRecommended focus areas:\n- Revisit the core concept tested by the failing cases.\n- Practice 2-3 similar problems from the same topic.\n- Add basic input validation / edge-case handling to your code."
+            },
+            "plagiarism_flags": [
+              {
+                "pair": [
+                  "student_E",
+                  "student_G"
+                ],
+                "similarity": 0.622,
+                "flagged": false
+              },
+              {
+                "pair": [
+                  "student_E",
+                  "student_F"
+                ],
+                "similarity": 0.585,
+                "flagged": false
+              },
+              {
+                "pair": [
+                  "student_E",
+                  "student_H"
+                ],
+                "similarity": 0.0,
+                "flagged": false
+              }
+            ]
+          }
+        },
+        "result": {
+          "status": "received"
+        }
+      }
+    ],
+    "report": {
+      "student_id": "student_E",
+      "score_pct": 100.0,
+      "feedback": "[MOCK LLM RESPONSE - set GROQ_API_KEY (free) or ANTHROPIC_API_KEY for real generation]\nOverall: The submission demonstrates a reasonable attempt at the problem.\nStrengths: Logical structure is present and core requirements are partially met.\nWeaknesses: Some edge cases / test cases were not handled correctly.\nSuggestion: Review the failing cases listed above and re-trace your logic\nfor those specific inputs before resubmitting.",
+      "improvement": {
+        "weak_points": [
+          "No major weak areas detected — keep it up."
+        ],
+        "narrative": "[MOCK LLM RESPONSE - set GROQ_API_KEY (free) or ANTHROPIC_API_KEY for real generation]\nRecommended focus areas:\n- Revisit the core concept tested by the failing cases.\n- Practice 2-3 similar problems from the same topic.\n- Add basic input validation / edge-case handling to your code."
+      },
+      "plagiarism_flags": [
+        {
+          "pair": [
+            "student_E",
+            "student_G"
+          ],
+          "similarity": 0.622,
+          "flagged": false
+        },
+        {
+          "pair": [
+            "student_E",
+            "student_F"
+          ],
+          "similarity": 0.585,
+          "flagged": false
+        },
+        {
+          "pair": [
+            "student_E",
+            "student_H"
+          ],
+          "similarity": 0.0,
+          "flagged": false
+        }
+      ]
+    }
+  },
+  "student_F": {
+    "agent_message": "[MOCK LLM RESPONSE - set GROQ_API_KEY (free) or ANTHROPIC_API_KEY for real generation]\nOverall: The submission demonstrates a reasonable attempt at the problem.\nStrengths: Logical structure is present and core requirements are partially met.\nWeaknesses: Some edge cases / test cases were not handled correctly.\nSuggestion: Review the failing cases listed above and re-trace your logic\nfor those specific inputs before resubmitting.",
+    "tool_trace": [
+      {
+        "mode": "mock",
+        "tool": "grade_submission",
+        "input": {
+          "student_id": "student_F"
+        },
+        "result": {
+          "type": "math",
+          "correct_final_answer": true,
+          "comparison_method": "symbolic_equivalence",
+          "shows_work": true,
+          "score_pct": 100.0
+        }
+      },
+      {
+        "mode": "mock",
+        "tool": "check_plagiarism_for_student",
+        "input": {
+          "student_id": "student_F"
+        },
+        "result": {
+          "flags_involving_student": [
+            {
+              "pair": [
+                "student_F",
+                "student_G"
+              ],
+              "similarity": 0.651,
+              "flagged": false
+            },
+            {
+              "pair": [
+                "student_E",
+                "student_F"
+              ],
+              "similarity": 0.585,
+              "flagged": false
+            },
+            {
+              "pair": [
+                "student_F",
+                "student_H"
+              ],
+              "similarity": 0.0,
+              "flagged": false
+            }
+          ]
+        }
+      },
+      {
+        "mode": "mock",
+        "tool": "generate_feedback",
+        "input": {
+          "student_id": "student_F"
+        },
+        "result": {
+          "feedback": "[MOCK LLM RESPONSE - set GROQ_API_KEY (free) or ANTHROPIC_API_KEY for real generation]\nOverall: The submission demonstrates a reasonable attempt at the problem.\nStrengths: Logical structure is present and core requirements are partially met.\nWeaknesses: Some edge cases / test cases were not handled correctly.\nSuggestion: Review the failing cases listed above and re-trace your logic\nfor those specific inputs before resubmitting."
+        }
+      },
+      {
+        "mode": "mock",
+        "tool": "suggest_improvements",
+        "input": {
+          "student_id": "student_F"
+        },
+        "result": {
+          "weak_points": [
+            "No major weak areas detected — keep it up."
+          ],
+          "narrative": "[MOCK LLM RESPONSE - set GROQ_API_KEY (free) or ANTHROPIC_API_KEY for real generation]\nRecommended focus areas:\n- Revisit the core concept tested by the failing cases.\n- Practice 2-3 similar problems from the same topic.\n- Add basic input validation / edge-case handling to your code."
+        }
+      },
+      {
+        "mode": "mock",
+        "tool": "submit_final_report",
+        "input": {
+          "report": {
+            "student_id": "student_F",
+            "score_pct": 100.0,
+            "feedback": "[MOCK LLM RESPONSE - set GROQ_API_KEY (free) or ANTHROPIC_API_KEY for real generation]\nOverall: The submission demonstrates a reasonable attempt at the problem.\nStrengths: Logical structure is present and core requirements are partially met.\nWeaknesses: Some edge cases / test cases were not handled correctly.\nSuggestion: Review the failing cases listed above and re-trace your logic\nfor those specific inputs before resubmitting.",
+            "improvement": {
+              "weak_points": [
+                "No major weak areas detected — keep it up."
+              ],
+              "narrative": "[MOCK LLM RESPONSE - set GROQ_API_KEY (free) or ANTHROPIC_API_KEY for real generation]\nRecommended focus areas:\n- Revisit the core concept tested by the failing cases.\n- Practice 2-3 similar problems from the same topic.\n- Add basic input validation / edge-case handling to your code."
+            },
+            "plagiarism_flags": [
+              {
+                "pair": [
+                  "student_F",
+                  "student_G"
+                ],
+                "similarity": 0.651,
+                "flagged": false
+              },
+              {
+                "pair": [
+                  "student_E",
+                  "student_F"
+                ],
+                "similarity": 0.585,
+                "flagged": false
+              },
+              {
+                "pair": [
+                  "student_F",
+                  "student_H"
+                ],
+                "similarity": 0.0,
+                "flagged": false
+              }
+            ]
+          }
+        },
+        "result": {
+          "status": "received"
+        }
+      }
+    ],
+    "report": {
+      "student_id": "student_F",
+      "score_pct": 100.0,
+      "feedback": "[MOCK LLM RESPONSE - set GROQ_API_KEY (free) or ANTHROPIC_API_KEY for real generation]\nOverall: The submission demonstrates a reasonable attempt at the problem.\nStrengths: Logical structure is present and core requirements are partially met.\nWeaknesses: Some edge cases / test cases were not handled correctly.\nSuggestion: Review the failing cases listed above and re-trace your logic\nfor those specific inputs before resubmitting.",
+      "improvement": {
+        "weak_points": [
+          "No major weak areas detected — keep it up."
+        ],
+        "narrative": "[MOCK LLM RESPONSE - set GROQ_API_KEY (free) or ANTHROPIC_API_KEY for real generation]\nRecommended focus areas:\n- Revisit the core concept tested by the failing cases.\n- Practice 2-3 similar problems from the same topic.\n- Add basic input validation / edge-case handling to your code."
+      },
+      "plagiarism_flags": [
+        {
+          "pair": [
+            "student_F",
+            "student_G"
+          ],
+          "similarity": 0.651,
+          "flagged": false
+        },
+        {
+          "pair": [
+            "student_E",
+            "student_F"
+          ],
+          "similarity": 0.585,
+          "flagged": false
+        },
+        {
+          "pair": [
+            "student_F",
+            "student_H"
+          ],
+          "similarity": 0.0,
+          "flagged": false
+        }
+      ]
+    }
+  },
+  "student_G": {
+    "agent_message": "[MOCK LLM RESPONSE - set GROQ_API_KEY (free) or ANTHROPIC_API_KEY for real generation]\nOverall: The submission demonstrates a reasonable attempt at the problem.\nStrengths: Logical structure is present and core requirements are partially met.\nWeaknesses: Some edge cases / test cases were not handled correctly.\nSuggestion: Review the failing cases listed above and re-trace your logic\nfor those specific inputs before resubmitting.",
+    "tool_trace": [
+      {
+        "mode": "mock",
+        "tool": "grade_submission",
+        "input": {
+          "student_id": "student_G"
+        },
+        "result": {
+          "type": "math",
+          "correct_final_answer": false,
+          "comparison_method": "symbolic_equivalence",
+          "shows_work": true,
+          "score_pct": 30.0
+        }
+      },
+      {
+        "mode": "mock",
+        "tool": "check_plagiarism_for_student",
+        "input": {
+          "student_id": "student_G"
+        },
+        "result": {
+          "flags_involving_student": [
+            {
+              "pair": [
+                "student_F",
+                "student_G"
+              ],
+              "similarity": 0.651,
+              "flagged": false
+            },
+            {
+              "pair": [
+                "student_E",
+                "student_G"
+              ],
+              "similarity": 0.622,
+              "flagged": false
+            },
+            {
+              "pair": [
+                "student_G",
+                "student_H"
+              ],
+              "similarity": 0.0,
+              "flagged": false
+            }
+          ]
+        }
+      },
+      {
+        "mode": "mock",
+        "tool": "generate_feedback",
+        "input": {
+          "student_id": "student_G"
+        },
+        "result": {
+          "feedback": "[MOCK LLM RESPONSE - set GROQ_API_KEY (free) or ANTHROPIC_API_KEY for real generation]\nOverall: The submission demonstrates a reasonable attempt at the problem.\nStrengths: Logical structure is present and core requirements are partially met.\nWeaknesses: Some edge cases / test cases were not handled correctly.\nSuggestion: Review the failing cases listed above and re-trace your logic\nfor those specific inputs before resubmitting."
+        }
+      },
+      {
+        "mode": "mock",
+        "tool": "suggest_improvements",
+        "input": {
+          "student_id": "student_G"
+        },
+        "result": {
+          "weak_points": [
+            "Revisit the core formula/derivation for this topic before the next assignment."
+          ],
+          "narrative": "[MOCK LLM RESPONSE - set GROQ_API_KEY (free) or ANTHROPIC_API_KEY for real generation]\nRecommended focus areas:\n- Revisit the core concept tested by the failing cases.\n- Practice 2-3 similar problems from the same topic.\n- Add basic input validation / edge-case handling to your code."
+        }
+      },
+      {
+        "mode": "mock",
+        "tool": "submit_final_report",
+        "input": {
+          "report": {
+            "student_id": "student_G",
+            "score_pct": 30.0,
+            "feedback": "[MOCK LLM RESPONSE - set GROQ_API_KEY (free) or ANTHROPIC_API_KEY for real generation]\nOverall: The submission demonstrates a reasonable attempt at the problem.\nStrengths: Logical structure is present and core requirements are partially met.\nWeaknesses: Some edge cases / test cases were not handled correctly.\nSuggestion: Review the failing cases listed above and re-trace your logic\nfor those specific inputs before resubmitting.",
+            "improvement": {
+              "weak_points": [
+                "Revisit the core formula/derivation for this topic before the next assignment."
+              ],
+              "narrative": "[MOCK LLM RESPONSE - set GROQ_API_KEY (free) or ANTHROPIC_API_KEY for real generation]\nRecommended focus areas:\n- Revisit the core concept tested by the failing cases.\n- Practice 2-3 similar problems from the same topic.\n- Add basic input validation / edge-case handling to your code."
+            },
+            "plagiarism_flags": [
+              {
+                "pair": [
+                  "student_F",
+                  "student_G"
+                ],
+                "similarity": 0.651,
+                "flagged": false
+              },
+              {
+                "pair": [
+                  "student_E",
+                  "student_G"
+                ],
+                "similarity": 0.622,
+                "flagged": false
+              },
+              {
+                "pair": [
+                  "student_G",
+                  "student_H"
+                ],
+                "similarity": 0.0,
+                "flagged": false
+              }
+            ]
+          }
+        },
+        "result": {
+          "status": "received"
+        }
+      }
+    ],
+    "report": {
+      "student_id": "student_G",
+      "score_pct": 30.0,
+      "feedback": "[MOCK LLM RESPONSE - set GROQ_API_KEY (free) or ANTHROPIC_API_KEY for real generation]\nOverall: The submission demonstrates a reasonable attempt at the problem.\nStrengths: Logical structure is present and core requirements are partially met.\nWeaknesses: Some edge cases / test cases were not handled correctly.\nSuggestion: Review the failing cases listed above and re-trace your logic\nfor those specific inputs before resubmitting.",
+      "improvement": {
+        "weak_points": [
+          "Revisit the core formula/derivation for this topic before the next assignment."
+        ],
+        "narrative": "[MOCK LLM RESPONSE - set GROQ_API_KEY (free) or ANTHROPIC_API_KEY for real generation]\nRecommended focus areas:\n- Revisit the core concept tested by the failing cases.\n- Practice 2-3 similar problems from the same topic.\n- Add basic input validation / edge-case handling to your code."
+      },
+      "plagiarism_flags": [
+        {
+          "pair": [
+            "student_F",
+            "student_G"
+          ],
+          "similarity": 0.651,
+          "flagged": false
+        },
+        {
+          "pair": [
+            "student_E",
+            "student_G"
+          ],
+          "similarity": 0.622,
+          "flagged": false
+        },
+        {
+          "pair": [
+            "student_G",
+            "student_H"
+          ],
+          "similarity": 0.0,
+          "flagged": false
+        }
+      ]
+    }
+  },
+  "student_H": {
+    "agent_message": "[MOCK LLM RESPONSE - set GROQ_API_KEY (free) or ANTHROPIC_API_KEY for real generation]\nOverall: The submission demonstrates a reasonable attempt at the problem.\nStrengths: Logical structure is present and core requirements are partially met.\nWeaknesses: Some edge cases / test cases were not handled correctly.\nSuggestion: Review the failing cases listed above and re-trace your logic\nfor those specific inputs before resubmitting.",
+    "tool_trace": [
+      {
+        "mode": "mock",
+        "tool": "grade_submission",
+        "input": {
+          "student_id": "student_H"
+        },
+        "result": {
+          "type": "math",
+          "correct_final_answer": true,
+          "comparison_method": "symbolic_equivalence",
+          "shows_work": false,
+          "score_pct": 100.0
+        }
+      },
+      {
+        "mode": "mock",
+        "tool": "check_plagiarism_for_student",
+        "input": {
+          "student_id": "student_H"
+        },
+        "result": {
+          "flags_involving_student": [
+            {
+              "pair": [
+                "student_E",
+                "student_H"
+              ],
+              "similarity": 0.0,
+              "flagged": false
+            },
+            {
+              "pair": [
+                "student_F",
+                "student_H"
+              ],
+              "similarity": 0.0,
+              "flagged": false
+            },
+            {
+              "pair": [
+                "student_G",
+                "student_H"
+              ],
+              "similarity": 0.0,
+              "flagged": false
+            }
+          ]
+        }
+      },
+      {
+        "mode": "mock",
+        "tool": "generate_feedback",
+        "input": {
+          "student_id": "student_H"
+        },
+        "result": {
+          "feedback": "[MOCK LLM RESPONSE - set GROQ_API_KEY (free) or ANTHROPIC_API_KEY for real generation]\nOverall: The submission demonstrates a reasonable attempt at the problem.\nStrengths: Logical structure is present and core requirements are partially met.\nWeaknesses: Some edge cases / test cases were not handled correctly.\nSuggestion: Review the failing cases listed above and re-trace your logic\nfor those specific inputs before resubmitting."
+        }
+      },
+      {
+        "mode": "mock",
+        "tool": "suggest_improvements",
+        "input": {
+          "student_id": "student_H"
+        },
+        "result": {
+          "weak_points": [
+            "No major weak areas detected — keep it up."
+          ],
+          "narrative": "[MOCK LLM RESPONSE - set GROQ_API_KEY (free) or ANTHROPIC_API_KEY for real generation]\nRecommended focus areas:\n- Revisit the core concept tested by the failing cases.\n- Practice 2-3 similar problems from the same topic.\n- Add basic input validation / edge-case handling to your code."
+        }
+      },
+      {
+        "mode": "mock",
+        "tool": "submit_final_report",
+        "input": {
+          "report": {
+            "student_id": "student_H",
+            "score_pct": 100.0,
+            "feedback": "[MOCK LLM RESPONSE - set GROQ_API_KEY (free) or ANTHROPIC_API_KEY for real generation]\nOverall: The submission demonstrates a reasonable attempt at the problem.\nStrengths: Logical structure is present and core requirements are partially met.\nWeaknesses: Some edge cases / test cases were not handled correctly.\nSuggestion: Review the failing cases listed above and re-trace your logic\nfor those specific inputs before resubmitting.",
+            "improvement": {
+              "weak_points": [
+                "No major weak areas detected — keep it up."
+              ],
+              "narrative": "[MOCK LLM RESPONSE - set GROQ_API_KEY (free) or ANTHROPIC_API_KEY for real generation]\nRecommended focus areas:\n- Revisit the core concept tested by the failing cases.\n- Practice 2-3 similar problems from the same topic.\n- Add basic input validation / edge-case handling to your code."
+            },
+            "plagiarism_flags": [
+              {
+                "pair": [
+                  "student_E",
+                  "student_H"
+                ],
+                "similarity": 0.0,
+                "flagged": false
+              },
+              {
+                "pair": [
+                  "student_F",
+                  "student_H"
+                ],
+                "similarity": 0.0,
+                "flagged": false
+              },
+              {
+                "pair": [
+                  "student_G",
+                  "student_H"
+                ],
+                "similarity": 0.0,
+                "flagged": false
+              }
+            ]
+          }
+        },
+        "result": {
+          "status": "received"
+        }
+      }
+    ],
+    "report": {
+      "student_id": "student_H",
+      "score_pct": 100.0,
+      "feedback": "[MOCK LLM RESPONSE - set GROQ_API_KEY (free) or ANTHROPIC_API_KEY for real generation]\nOverall: The submission demonstrates a reasonable attempt at the problem.\nStrengths: Logical structure is present and core requirements are partially met.\nWeaknesses: Some edge cases / test cases were not handled correctly.\nSuggestion: Review the failing cases listed above and re-trace your logic\nfor those specific inputs before resubmitting.",
+      "improvement": {
+        "weak_points": [
+          "No major weak areas detected — keep it up."
+        ],
+        "narrative": "[MOCK LLM RESPONSE - set GROQ_API_KEY (free) or ANTHROPIC_API_KEY for real generation]\nRecommended focus areas:\n- Revisit the core concept tested by the failing cases.\n- Practice 2-3 similar problems from the same topic.\n- Add basic input validation / edge-case handling to your code."
+      },
+      "plagiarism_flags": [
+        {
+          "pair": [
+            "student_E",
+            "student_H"
+          ],
+          "similarity": 0.0,
+          "flagged": false
+        },
+        {
+          "pair": [
+            "student_F",
+            "student_H"
+          ],
+          "similarity": 0.0,
+          "flagged": false
+        },
+        {
+          "pair": [
+            "student_G",
+            "student_H"
+          ],
+          "similarity": 0.0,
+          "flagged": false
+        }
+      ]
+    }
+  }
+}

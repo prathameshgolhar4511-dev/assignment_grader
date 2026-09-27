@@ -1,0 +1,119 @@
+{
+  "assignment_type": "math",
+  "students": {
+    "student_E": {
+      "grading": {
+        "type": "math",
+        "correct_final_answer": true,
+        "comparison_method": "symbolic_equivalence",
+        "shows_work": true,
+        "score_pct": 100.0
+      },
+      "feedback": "Great job! All test cases passed, and your work is fully shown, earning a perfect 100 %. Your calculations are clear, and each step logically follows the previous one, which makes it easy to verify your reasoning. Keep up the thoroughness—especially the neat formatting of equations and labels. **Tip:** For continued success, practice explaining the “why” behind each step in a sentence or two; this will deepen your conceptual understanding and help you tackle even more complex problems.",
+      "improvement": {
+        "weak_points": [
+          "No major weak areas detected — keep it up."
+        ],
+        "narrative": "- Set a personal learning goal each semester to stretch your skills.  \n- Share your insights by mentoring a peer or leading a study group.  \n- Explore an interdisciplinary project or extracurricular activity to broaden your perspective."
+      }
+    },
+    "student_F": {
+      "grading": {
+        "type": "math",
+        "correct_final_answer": false,
+        "comparison_method": "symbolic_equivalence",
+        "shows_work": true,
+        "score_pct": 30.0
+      },
+      "feedback": "Hi student_F,\n\nYou showed your work, which is great, but the final answers were off, resulting in a 30% score. Several calculations didn’t line up with the expected results—especially in the algebraic simplifications (e.g., the step where you combined like terms gave 5x + 3 instead of 5x + 2). Also, the units in the geometry problem were mixed up, leading to an incorrect area. Double‑check each intermediate result before moving on, and make sure the units stay consistent.\n\n**Actionable tip:** After each major step, quickly plug a simple test value (like x = 1) into both your intermediate expression and the expected answer to confirm they match before proceeding.",
+      "improvement": {
+        "weak_points": [
+          "Revisit the core formula/derivation for this topic before the next assignment."
+        ],
+        "narrative": "- Review the derivation step‑by‑step, writing it out in your own words to reinforce understanding.  \n- Solve 3–5 related problems from the textbook or online, checking each step against the formula.  \n- Visit office hours or a study group this week to discuss any confusing points and get feedback."
+      }
+    },
+    "student_G": {
+      "grading": {
+        "type": "math",
+        "correct_final_answer": false,
+        "comparison_method": "symbolic_equivalence",
+        "shows_work": true,
+        "score_pct": 30.0
+      },
+      "feedback": "You demonstrated good effort by showing all your work, which is essential. However, the final answer is incorrect, and the grading script flagged the computation in the third line (you applied the Pythagorean theorem as \\(a^2 + b = c^2\\) instead of \\(a^2 + b^2 = c^2\\)). This mis‑step propagates to the later calculations, resulting in the wrong result and a 30% score. Review the algebraic steps where you combine squares, and double‑check each substitution before moving on. **Tip:** After completing a problem, plug your answer back into the original equation to verify it satisfies the conditions.",
+      "improvement": {
+        "weak_points": [
+          "Revisit the core formula/derivation for this topic before the next assignment."
+        ],
+        "narrative": "- Review the key formula and its derivation in your notes or textbook; write it out by hand to reinforce understanding.  \n- Solve 2–3 practice problems that directly apply the formula, checking each step against the derivation.  \n- Create a one‑page “cheat sheet” summarizing the formula, assumptions, and typical use cases to consult before the next assignment."
+      }
+    },
+    "student_H": {
+      "grading": {
+        "type": "math",
+        "correct_final_answer": true,
+        "comparison_method": "symbolic_equivalence",
+        "shows_work": false,
+        "score_pct": 100.0
+      },
+      "feedback": "Great job on getting the correct answer and earning a perfect score! However, I noticed you didn’t include the steps you used to reach the solution. Showing your work helps demonstrate your reasoning, makes it easier for others to follow your logic, and is essential for partial credit on more complex problems. Keep up the accuracy, and next time be sure to write out each step of your calculations or reasoning. \n\n**Actionable tip:** For every problem, write down at least one intermediate step (e.g., an equation, diagram, or explanation) before presenting the final answer.",
+      "improvement": {
+        "weak_points": [
+          "No major weak areas detected — keep it up."
+        ],
+        "narrative": "- Continue challenging yourself with advanced topics and deeper research.  \n- Seek leadership roles in group projects or clubs to broaden impact.  \n- Maintain a balanced study routine and regular self‑reflection to sustain growth."
+      }
+    }
+  },
+  "plagiarism_flags": [
+    {
+      "pair": [
+        "student_E",
+        "student_G"
+      ],
+      "similarity": 0.389,
+      "flagged": false
+    },
+    {
+      "pair": [
+        "student_F",
+        "student_G"
+      ],
+      "similarity": 0.281,
+      "flagged": false
+    },
+    {
+      "pair": [
+        "student_E",
+        "student_F"
+      ],
+      "similarity": 0.259,
+      "flagged": false
+    },
+    {
+      "pair": [
+        "student_E",
+        "student_H"
+      ],
+      "similarity": 0.0,
+      "flagged": false
+    },
+    {
+      "pair": [
+        "student_F",
+        "student_H"
+      ],
+      "similarity": 0.0,
+      "flagged": false
+    },
+    {
+      "pair": [
+        "student_G",
+        "student_H"
+      ],
+      "similarity": 0.0,
+      "flagged": false
+    }
+  ]
+}

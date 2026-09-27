@@ -1,0 +1,790 @@
+{
+  "student_A": {
+    "agent_message": "The final report for student_A has been submitted.",
+    "tool_trace": [
+      {
+        "mode": "live",
+        "tool": "grade_submission",
+        "input": {
+          "student_id": "student_A"
+        },
+        "result": {
+          "type": "code",
+          "tests_passed": 5,
+          "tests_total": 5,
+          "score_pct": 100.0,
+          "test_results": [
+            {
+              "test": 1,
+              "passed": true,
+              "expected": "7",
+              "actual": "7"
+            },
+            {
+              "test": 2,
+              "passed": true,
+              "expected": "30",
+              "actual": "30"
+            },
+            {
+              "test": 3,
+              "passed": true,
+              "expected": "0",
+              "actual": "0"
+            },
+            {
+              "test": 4,
+              "passed": true,
+              "expected": "0",
+              "actual": "0"
+            },
+            {
+              "test": 5,
+              "passed": true,
+              "expected": "50",
+              "actual": "50"
+            }
+          ],
+          "static_checks": {
+            "has_function_def": true,
+            "has_docstring_or_comments": false,
+            "line_count": 6,
+            "uses_bare_except": false
+          }
+        }
+      },
+      {
+        "mode": "live",
+        "tool": "check_plagiarism_for_student",
+        "input": {
+          "student_id": "student_A"
+        },
+        "result": {
+          "flags_involving_student": [
+            {
+              "pair": [
+                "student_A",
+                "student_B"
+              ],
+              "similarity": 1.0,
+              "flagged": true
+            },
+            {
+              "pair": [
+                "student_A",
+                "student_D"
+              ],
+              "similarity": 0.189,
+              "flagged": false
+            },
+            {
+              "pair": [
+                "student_A",
+                "student_C"
+              ],
+              "similarity": 0.075,
+              "flagged": false
+            }
+          ]
+        }
+      },
+      {
+        "mode": "live",
+        "tool": "generate_feedback",
+        "input": {
+          "student_id": "student_A"
+        },
+        "result": {
+          "feedback": "Great work—your code passed every test (5/5)! The implementation is clean and concise (only six lines) and avoids a bare‑except, which shows solid error‑handling practice. The only area for improvement is documentation: adding a docstring (or brief comments) will clarify the function’s purpose, inputs, and outputs for anyone reading or reusing your code. \n\n**Actionable tip:** Write a concise docstring right under the function definition that describes what the function does, its parameters, return value, and any important side effects."
+        }
+      },
+      {
+        "mode": "live",
+        "tool": "suggest_improvements",
+        "input": {
+          "student_id": "student_A"
+        },
+        "result": {
+          "weak_points": [
+            "No major weak areas detected — keep it up."
+          ],
+          "narrative": "- Continue your strong work habits; set weekly goals to sustain momentum.  \n- Seek out advanced or enrichment projects to deepen expertise and challenge yourself.  \n- Share your strategies with peers or mentor others, building leadership while reinforcing your own learning."
+        }
+      },
+      {
+        "mode": "live",
+        "tool": "submit_final_report",
+        "input": {
+          "report": {
+            "feedback": "Great work—your code passed every test (5/5)! The implementation is clean and concise (only six lines) and avoids a bare‑except, which shows solid error‑handling practice. The only area for improvement is documentation: adding a docstring (or brief comments) will clarify the function’s purpose, inputs, and outputs for anyone reading or reusing your code.\n\n**Actionable tip:** Write a concise docstring right under the function definition that describes what the function does, its parameters, return value, and any important side effects.",
+            "improvement": {
+              "narrative": "- Continue your strong work habits; set weekly goals to sustain momentum.\n- Seek out advanced or enrichment projects to deepen expertise and challenge yourself.\n- Share your strategies with peers or mentor others, building leadership while reinforcing your own learning.",
+              "weak_points": [
+                "No major weak areas detected — keep it up."
+              ]
+            },
+            "plagiarism_flags": [
+              {
+                "flagged": true,
+                "pair": [
+                  "student_A",
+                  "student_B"
+                ],
+                "similarity": 1
+              },
+              {
+                "flagged": false,
+                "pair": [
+                  "student_A",
+                  "student_D"
+                ],
+                "similarity": 0.189
+              },
+              {
+                "flagged": false,
+                "pair": [
+                  "student_A",
+                  "student_C"
+                ],
+                "similarity": 0.075
+              }
+            ],
+            "score_pct": 100,
+            "student_id": "student_A"
+          }
+        },
+        "result": {
+          "status": "received"
+        }
+      }
+    ],
+    "report": {
+      "feedback": "Great work—your code passed every test (5/5)! The implementation is clean and concise (only six lines) and avoids a bare‑except, which shows solid error‑handling practice. The only area for improvement is documentation: adding a docstring (or brief comments) will clarify the function’s purpose, inputs, and outputs for anyone reading or reusing your code.\n\n**Actionable tip:** Write a concise docstring right under the function definition that describes what the function does, its parameters, return value, and any important side effects.",
+      "improvement": {
+        "narrative": "- Continue your strong work habits; set weekly goals to sustain momentum.\n- Seek out advanced or enrichment projects to deepen expertise and challenge yourself.\n- Share your strategies with peers or mentor others, building leadership while reinforcing your own learning.",
+        "weak_points": [
+          "No major weak areas detected — keep it up."
+        ]
+      },
+      "plagiarism_flags": [
+        {
+          "flagged": true,
+          "pair": [
+            "student_A",
+            "student_B"
+          ],
+          "similarity": 1
+        },
+        {
+          "flagged": false,
+          "pair": [
+            "student_A",
+            "student_D"
+          ],
+          "similarity": 0.189
+        },
+        {
+          "flagged": false,
+          "pair": [
+            "student_A",
+            "student_C"
+          ],
+          "similarity": 0.075
+        }
+      ],
+      "score_pct": 100,
+      "student_id": "student_A"
+    }
+  },
+  "student_B": {
+    "agent_message": "The final report for student_B has been successfully submitted.",
+    "tool_trace": [
+      {
+        "mode": "live",
+        "tool": "grade_submission",
+        "input": {
+          "student_id": "student_B"
+        },
+        "result": {
+          "type": "code",
+          "tests_passed": 5,
+          "tests_total": 5,
+          "score_pct": 100.0,
+          "test_results": [
+            {
+              "test": 1,
+              "passed": true,
+              "expected": "7",
+              "actual": "7"
+            },
+            {
+              "test": 2,
+              "passed": true,
+              "expected": "30",
+              "actual": "30"
+            },
+            {
+              "test": 3,
+              "passed": true,
+              "expected": "0",
+              "actual": "0"
+            },
+            {
+              "test": 4,
+              "passed": true,
+              "expected": "0",
+              "actual": "0"
+            },
+            {
+              "test": 5,
+              "passed": true,
+              "expected": "50",
+              "actual": "50"
+            }
+          ],
+          "static_checks": {
+            "has_function_def": true,
+            "has_docstring_or_comments": false,
+            "line_count": 6,
+            "uses_bare_except": false
+          }
+        }
+      },
+      {
+        "mode": "live",
+        "tool": "check_plagiarism_for_student",
+        "input": {
+          "student_id": "student_B"
+        },
+        "result": {
+          "flags_involving_student": [
+            {
+              "pair": [
+                "student_A",
+                "student_B"
+              ],
+              "similarity": 1.0,
+              "flagged": true
+            },
+            {
+              "pair": [
+                "student_B",
+                "student_D"
+              ],
+              "similarity": 0.189,
+              "flagged": false
+            },
+            {
+              "pair": [
+                "student_B",
+                "student_C"
+              ],
+              "similarity": 0.075,
+              "flagged": false
+            }
+          ]
+        }
+      },
+      {
+        "mode": "live",
+        "tool": "generate_feedback",
+        "input": {
+          "student_id": "student_B"
+        },
+        "result": {
+          "feedback": "Great job—your code passes every test case! The implementation is concise and works correctly. One area to improve is documentation: the static check shows there’s no docstring or comments. Adding a clear docstring (and brief inline comments where helpful) will make your code easier for others (and future you) to understand and maintain.  \n\n**Actionable tip:** Write a docstring at the top of each function that describes its purpose, parameters, return value, and any edge‑case handling. This will boost readability and earn full static‑check credit."
+        }
+      },
+      {
+        "mode": "live",
+        "tool": "suggest_improvements",
+        "input": {
+          "student_id": "student_B"
+        },
+        "result": {
+          "weak_points": [
+            "No major weak areas detected — keep it up."
+          ],
+          "narrative": "- Keep participating actively in class discussions and projects to reinforce your strong performance.  \n- Challenge yourself with advanced readings or extracurricular topics that interest you.  \n- Mentor peers or lead a study group to deepen your understanding and share your strengths."
+        }
+      },
+      {
+        "mode": "live",
+        "tool": "submit_final_report",
+        "input": {
+          "report": {
+            "feedback": "Great job—your code passes every test case! The implementation is concise and works correctly. One area to improve is documentation: the static check shows there’s no docstring or comments. Adding a clear docstring (and brief inline comments where helpful) will make your code easier for others (and future you) to understand and maintain.\n\n**Actionable tip:** Write a docstring at the top of each function that describes its purpose, parameters, return value, and any edge‑case handling. This will boost readability and earn full static‑check credit.",
+            "improvement": {
+              "narrative": "- Keep participating actively in class discussions and projects to reinforce your strong performance.\n- Challenge yourself with advanced readings or extracurricular topics that interest you.\n- Mentor peers or lead a study group to deepen your understanding and share your strengths.",
+              "weak_points": [
+                "No major weak areas detected — keep it up."
+              ]
+            },
+            "plagiarism_flags": [
+              {
+                "flagged": true,
+                "pair": [
+                  "student_A",
+                  "student_B"
+                ],
+                "similarity": 1
+              },
+              {
+                "flagged": false,
+                "pair": [
+                  "student_B",
+                  "student_D"
+                ],
+                "similarity": 0.189
+              },
+              {
+                "flagged": false,
+                "pair": [
+                  "student_B",
+                  "student_C"
+                ],
+                "similarity": 0.075
+              }
+            ],
+            "score_pct": 100,
+            "student_id": "student_B"
+          }
+        },
+        "result": {
+          "status": "received"
+        }
+      }
+    ],
+    "report": {
+      "feedback": "Great job—your code passes every test case! The implementation is concise and works correctly. One area to improve is documentation: the static check shows there’s no docstring or comments. Adding a clear docstring (and brief inline comments where helpful) will make your code easier for others (and future you) to understand and maintain.\n\n**Actionable tip:** Write a docstring at the top of each function that describes its purpose, parameters, return value, and any edge‑case handling. This will boost readability and earn full static‑check credit.",
+      "improvement": {
+        "narrative": "- Keep participating actively in class discussions and projects to reinforce your strong performance.\n- Challenge yourself with advanced readings or extracurricular topics that interest you.\n- Mentor peers or lead a study group to deepen your understanding and share your strengths.",
+        "weak_points": [
+          "No major weak areas detected — keep it up."
+        ]
+      },
+      "plagiarism_flags": [
+        {
+          "flagged": true,
+          "pair": [
+            "student_A",
+            "student_B"
+          ],
+          "similarity": 1
+        },
+        {
+          "flagged": false,
+          "pair": [
+            "student_B",
+            "student_D"
+          ],
+          "similarity": 0.189
+        },
+        {
+          "flagged": false,
+          "pair": [
+            "student_B",
+            "student_C"
+          ],
+          "similarity": 0.075
+        }
+      ],
+      "score_pct": 100,
+      "student_id": "student_B"
+    }
+  },
+  "student_C": {
+    "agent_message": "The final grading report for student_C has been submitted.",
+    "tool_trace": [
+      {
+        "mode": "live",
+        "tool": "grade_submission",
+        "input": {
+          "student_id": "student_C"
+        },
+        "result": {
+          "type": "code",
+          "tests_passed": 5,
+          "tests_total": 5,
+          "score_pct": 100.0,
+          "test_results": [
+            {
+              "test": 1,
+              "passed": true,
+              "expected": "7",
+              "actual": "7"
+            },
+            {
+              "test": 2,
+              "passed": true,
+              "expected": "30",
+              "actual": "30"
+            },
+            {
+              "test": 3,
+              "passed": true,
+              "expected": "0",
+              "actual": "0"
+            },
+            {
+              "test": 4,
+              "passed": true,
+              "expected": "0",
+              "actual": "0"
+            },
+            {
+              "test": 5,
+              "passed": true,
+              "expected": "50",
+              "actual": "50"
+            }
+          ],
+          "static_checks": {
+            "has_function_def": false,
+            "has_docstring_or_comments": false,
+            "line_count": 5,
+            "uses_bare_except": false
+          }
+        }
+      },
+      {
+        "mode": "live",
+        "tool": "check_plagiarism_for_student",
+        "input": {
+          "student_id": "student_C"
+        },
+        "result": {
+          "flags_involving_student": [
+            {
+              "pair": [
+                "student_C",
+                "student_D"
+              ],
+              "similarity": 0.275,
+              "flagged": false
+            },
+            {
+              "pair": [
+                "student_A",
+                "student_C"
+              ],
+              "similarity": 0.075,
+              "flagged": false
+            },
+            {
+              "pair": [
+                "student_B",
+                "student_C"
+              ],
+              "similarity": 0.075,
+              "flagged": false
+            }
+          ]
+        }
+      },
+      {
+        "mode": "live",
+        "tool": "generate_feedback",
+        "input": {
+          "student_id": "student_C"
+        },
+        "result": {
+          "feedback": "Great job passing every test! 🎉 Your solution works correctly and is concise. However, the static analysis shows that you didn’t define a function or include any documentation, which are important for readability and reuse. Next time, wrap your logic inside a clearly‑named function and add a short docstring explaining its purpose and parameters. This will make your code easier for others (and yourself) to understand and maintain. \n\n**Actionable tip:** Refactor your script into a function like `def solve_problem(...):` and include a one‑sentence docstring describing what it does."
+        }
+      },
+      {
+        "mode": "live",
+        "tool": "suggest_improvements",
+        "input": {
+          "student_id": "student_C"
+        },
+        "result": {
+          "weak_points": [
+            "Code organization — break logic into functions for clarity and reuse."
+          ],
+          "narrative": "- Identify repeated patterns and extract them into well‑named functions.  \n- Write a short outline or pseudocode before coding to decide where functions belong.  \n- Use consistent naming and a logical folder/file structure; refactor after each major feature."
+        }
+      },
+      {
+        "mode": "live",
+        "tool": "submit_final_report",
+        "input": {
+          "report": {
+            "feedback": "Great job passing every test! 🎉 Your solution works correctly and is concise. However, the static analysis shows that you didn’t define a function or include any documentation, which are important for readability and reuse. Next time, wrap your logic inside a clearly‑named function and add a short docstring explaining its purpose and parameters. This will make your code easier for others (and yourself) to understand and maintain.\n\n**Actionable tip:** Refactor your script into a function like `def solve_problem(...):` and include a one‑sentence docstring describing what it does.",
+            "improvement": {
+              "narrative": "- Identify repeated patterns and extract them into well‑named functions.  \n- Write a short outline or pseudocode before coding to decide where functions belong.  \n- Use consistent naming and a logical folder/file structure; refactor after each major feature.",
+              "weak_points": [
+                "Code organization — break logic into functions for clarity and reuse."
+              ]
+            },
+            "plagiarism_flags": [
+              {
+                "flagged": false,
+                "pair": [
+                  "student_C",
+                  "student_D"
+                ],
+                "similarity": 0.275
+              },
+              {
+                "flagged": false,
+                "pair": [
+                  "student_A",
+                  "student_C"
+                ],
+                "similarity": 0.075
+              },
+              {
+                "flagged": false,
+                "pair": [
+                  "student_B",
+                  "student_C"
+                ],
+                "similarity": 0.075
+              }
+            ],
+            "score_pct": 100,
+            "student_id": "student_C"
+          }
+        },
+        "result": {
+          "status": "received"
+        }
+      }
+    ],
+    "report": {
+      "feedback": "Great job passing every test! 🎉 Your solution works correctly and is concise. However, the static analysis shows that you didn’t define a function or include any documentation, which are important for readability and reuse. Next time, wrap your logic inside a clearly‑named function and add a short docstring explaining its purpose and parameters. This will make your code easier for others (and yourself) to understand and maintain.\n\n**Actionable tip:** Refactor your script into a function like `def solve_problem(...):` and include a one‑sentence docstring describing what it does.",
+      "improvement": {
+        "narrative": "- Identify repeated patterns and extract them into well‑named functions.  \n- Write a short outline or pseudocode before coding to decide where functions belong.  \n- Use consistent naming and a logical folder/file structure; refactor after each major feature.",
+        "weak_points": [
+          "Code organization — break logic into functions for clarity and reuse."
+        ]
+      },
+      "plagiarism_flags": [
+        {
+          "flagged": false,
+          "pair": [
+            "student_C",
+            "student_D"
+          ],
+          "similarity": 0.275
+        },
+        {
+          "flagged": false,
+          "pair": [
+            "student_A",
+            "student_C"
+          ],
+          "similarity": 0.075
+        },
+        {
+          "flagged": false,
+          "pair": [
+            "student_B",
+            "student_C"
+          ],
+          "similarity": 0.075
+        }
+      ],
+      "score_pct": 100,
+      "student_id": "student_C"
+    }
+  },
+  "student_D": {
+    "agent_message": "The final report for student_D has been submitted.",
+    "tool_trace": [
+      {
+        "mode": "live",
+        "tool": "grade_submission",
+        "input": {
+          "student_id": "student_D"
+        },
+        "result": {
+          "type": "code",
+          "tests_passed": 0,
+          "tests_total": 5,
+          "score_pct": 0.0,
+          "test_results": [
+            {
+              "test": 1,
+              "passed": false,
+              "expected": "7",
+              "actual": "8"
+            },
+            {
+              "test": 2,
+              "passed": false,
+              "expected": "30",
+              "actual": "31"
+            },
+            {
+              "test": 3,
+              "passed": false,
+              "expected": "0",
+              "actual": "1"
+            },
+            {
+              "test": 4,
+              "passed": false,
+              "expected": "0",
+              "actual": "1"
+            },
+            {
+              "test": 5,
+              "passed": false,
+              "expected": "50",
+              "actual": "51"
+            }
+          ],
+          "static_checks": {
+            "has_function_def": false,
+            "has_docstring_or_comments": false,
+            "line_count": 2,
+            "uses_bare_except": false
+          }
+        }
+      },
+      {
+        "mode": "live",
+        "tool": "check_plagiarism_for_student",
+        "input": {
+          "student_id": "student_D"
+        },
+        "result": {
+          "flags_involving_student": [
+            {
+              "pair": [
+                "student_C",
+                "student_D"
+              ],
+              "similarity": 0.275,
+              "flagged": false
+            },
+            {
+              "pair": [
+                "student_A",
+                "student_D"
+              ],
+              "similarity": 0.189,
+              "flagged": false
+            },
+            {
+              "pair": [
+                "student_B",
+                "student_D"
+              ],
+              "similarity": 0.189,
+              "flagged": false
+            }
+          ]
+        }
+      },
+      {
+        "mode": "live",
+        "tool": "generate_feedback",
+        "input": {
+          "student_id": "student_D"
+        },
+        "result": {
+          "feedback": "Your submission didn't pass any tests. All five cases are off by one (7 → 8, 30 → 31, 0 → 1, 0 → 1, 50 → 51), indicating a systematic off‑by‑one error in your logic. The static checker also notes that you didn't define a function or include any docstring/comments, and the file contains only two lines"
+        }
+      },
+      {
+        "mode": "live",
+        "tool": "suggest_improvements",
+        "input": {
+          "student_id": "student_D"
+        },
+        "result": {
+          "weak_points": [
+            "Code organization — break logic into functions for clarity and reuse."
+          ],
+          "narrative": "- Identify repeatable chunks of logic and refactor them into well‑named functions, then call those functions where needed.  \n- Adopt a consistent naming and commenting style for each function to make its purpose clear at a glance.  \n- After adding new features, pause to review the file structure and move related functions into separate modules for easier reuse and testing."
+        }
+      },
+      {
+        "mode": "live",
+        "tool": "submit_final_report",
+        "input": {
+          "report": {
+            "feedback": "Your submission didn't pass any tests. All five cases are off by one (7 → 8, 30 → 31, 0 → 1, 0 → 1, 50 → 51), indicating a systematic off‑by‑one error in your logic. The static checker also notes that you didn't define a function or include any docstring/comments, and the file contains only two lines.",
+            "improvement": {
+              "narrative": "- Identify repeatable chunks of logic and refactor them into well‑named functions, then call those functions where needed.\n- Adopt a consistent naming and commenting style for each function to make its purpose clear at a glance.\n- After adding new features, pause to review the file structure and move related functions into separate modules for easier reuse and testing.",
+              "weak_points": [
+                "Code organization — break logic into functions for clarity and reuse."
+              ]
+            },
+            "plagiarism_flags": [
+              {
+                "flagged": false,
+                "pair": [
+                  "student_C",
+                  "student_D"
+                ],
+                "similarity": 0.275
+              },
+              {
+                "flagged": false,
+                "pair": [
+                  "student_A",
+                  "student_D"
+                ],
+                "similarity": 0.189
+              },
+              {
+                "flagged": false,
+                "pair": [
+                  "student_B",
+                  "student_D"
+                ],
+                "similarity": 0.189
+              }
+            ],
+            "score_pct": 0,
+            "student_id": "student_D"
+          }
+        },
+        "result": {
+          "status": "received"
+        }
+      }
+    ],
+    "report": {
+      "feedback": "Your submission didn't pass any tests. All five cases are off by one (7 → 8, 30 → 31, 0 → 1, 0 → 1, 50 → 51), indicating a systematic off‑by‑one error in your logic. The static checker also notes that you didn't define a function or include any docstring/comments, and the file contains only two lines.",
+      "improvement": {
+        "narrative": "- Identify repeatable chunks of logic and refactor them into well‑named functions, then call those functions where needed.\n- Adopt a consistent naming and commenting style for each function to make its purpose clear at a glance.\n- After adding new features, pause to review the file structure and move related functions into separate modules for easier reuse and testing.",
+        "weak_points": [
+          "Code organization — break logic into functions for clarity and reuse."
+        ]
+      },
+      "plagiarism_flags": [
+        {
+          "flagged": false,
+          "pair": [
+            "student_C",
+            "student_D"
+          ],
+          "similarity": 0.275
+        },
+        {
+          "flagged": false,
+          "pair": [
+            "student_A",
+            "student_D"
+          ],
+          "similarity": 0.189
+        },
+        {
+          "flagged": false,
+          "pair": [
+            "student_B",
+            "student_D"
+          ],
+          "similarity": 0.189
+        }
+      ],
+      "score_pct": 0,
+      "student_id": "student_D"
+    }
+  }
+}
