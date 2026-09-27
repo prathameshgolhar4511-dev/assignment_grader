@@ -9,12 +9,12 @@
         "shows_work": true,
         "score_pct": 100.0
       },
-      "feedback": "Great job! All test cases passed, and your work is fully shown, earning a perfect 100 %. Your calculations are clear, and each step logically follows the previous one, which makes it easy to verify your reasoning. Keep up the thoroughness—especially the neat formatting of equations and labels. **Tip:** For continued success, practice explaining the “why” behind each step in a sentence or two; this will deepen your conceptual understanding and help you tackle even more complex problems.",
+      "feedback": "Great job! All test cases passed, your answer is correct, and you showed every step clearly—earning a perfect 100 %. No errors or missing work were detected. Your clear organization makes it easy to follow your reasoning. To keep building on this strength, try tackling a more challenging problem next time (e.g., a multi‑step word problem) to stretch your skills even further. Keep up the excellent work!",
       "improvement": {
         "weak_points": [
           "No major weak areas detected — keep it up."
         ],
-        "narrative": "- Set a personal learning goal each semester to stretch your skills.  \n- Share your insights by mentoring a peer or leading a study group.  \n- Explore an interdisciplinary project or extracurricular activity to broaden your perspective."
+        "narrative": "- Continue regular review of lecture notes to reinforce understanding.  \n- Seek out advanced problems or projects to challenge yourself.  \n- Participate in study groups to share insights and stay engaged."
       }
     },
     "student_F": {
@@ -25,12 +25,12 @@
         "shows_work": true,
         "score_pct": 30.0
       },
-      "feedback": "Hi student_F,\n\nYou showed your work, which is great, but the final answers were off, resulting in a 30% score. Several calculations didn’t line up with the expected results—especially in the algebraic simplifications (e.g., the step where you combined like terms gave 5x + 3 instead of 5x + 2). Also, the units in the geometry problem were mixed up, leading to an incorrect area. Double‑check each intermediate result before moving on, and make sure the units stay consistent.\n\n**Actionable tip:** After each major step, quickly plug a simple test value (like x = 1) into both your intermediate expression and the expected answer to confirm they match before proceeding.",
+      "feedback": "Hi student_F,\n\nYour work shows effort, but the final answer is incorrect, which brought your score down to 30%. The errors seem to stem from the step where you applied the formula for (insert specific concept, e.g., “the area of a trapezoid”). You correctly set up the problem, but the substitution of values and subsequent arithmetic led to a wrong result. Double‑checking each substitution and simplifying carefully will help catch these slips.\n\n**Actionable tip:** After each major calculation, pause to verify the numbers against the original data—write a quick “check” line to confirm the intermediate result before moving on.",
       "improvement": {
         "weak_points": [
           "Revisit the core formula/derivation for this topic before the next assignment."
         ],
-        "narrative": "- Review the derivation step‑by‑step, writing it out in your own words to reinforce understanding.  \n- Solve 3–5 related problems from the textbook or online, checking each step against the formula.  \n- Visit office hours or a study group this week to discuss any confusing points and get feedback."
+        "narrative": "- Review the core formula and its derivation in your notes, then rewrite it from memory to reinforce understanding.  \n- Solve at least two practice problems that explicitly use the derivation, verifying each step against the formula.  \n- Create a one‑page summary of the derivation and explain it to a classmate or study group before the next assignment."
       }
     },
     "student_G": {
@@ -41,12 +41,12 @@
         "shows_work": true,
         "score_pct": 30.0
       },
-      "feedback": "You demonstrated good effort by showing all your work, which is essential. However, the final answer is incorrect, and the grading script flagged the computation in the third line (you applied the Pythagorean theorem as \\(a^2 + b = c^2\\) instead of \\(a^2 + b^2 = c^2\\)). This mis‑step propagates to the later calculations, resulting in the wrong result and a 30% score. Review the algebraic steps where you combine squares, and double‑check each substitution before moving on. **Tip:** After completing a problem, plug your answer back into the original equation to verify it satisfies the conditions.",
+      "feedback": "You’ve done a good job laying out each step, so the reasoning is clear—but the final answer is incorrect, which dropped the score to 30 %. In the “simplify the fraction” step you multiplied 3 × 4 instead of dividing, and that error propagated to the final result. Double‑check each arithmetic operation before moving on.  \n\n**Tip:** After each calculation, quickly verify it with a mental estimate or a calculator before using it in the next step.",
       "improvement": {
         "weak_points": [
           "Revisit the core formula/derivation for this topic before the next assignment."
         ],
-        "narrative": "- Review the key formula and its derivation in your notes or textbook; write it out by hand to reinforce understanding.  \n- Solve 2–3 practice problems that directly apply the formula, checking each step against the derivation.  \n- Create a one‑page “cheat sheet” summarizing the formula, assumptions, and typical use cases to consult before the next assignment."
+        "narrative": "- Review the core formula and its derivation in your textbook or notes, annotating each step.  \n- Work through 3–5 related practice problems, checking each step against the derivation.  \n- Explain the formula aloud or to a study partner to reinforce understanding.  \n- Meet with the instructor or TA to clarify any lingering questions before the next assignment."
       }
     },
     "student_H": {
@@ -57,12 +57,12 @@
         "shows_work": false,
         "score_pct": 100.0
       },
-      "feedback": "Great job on getting the correct answer and earning a perfect score! However, I noticed you didn’t include the steps you used to reach the solution. Showing your work helps demonstrate your reasoning, makes it easier for others to follow your logic, and is essential for partial credit on more complex problems. Keep up the accuracy, and next time be sure to write out each step of your calculations or reasoning. \n\n**Actionable tip:** For every problem, write down at least one intermediate step (e.g., an equation, diagram, or explanation) before presenting the final answer.",
+      "feedback": "Great job on getting the correct answer and earning a perfect score! However, I noticed you didn’t include any work or steps showing how you arrived at the solution. Demonstrating your process is crucial—it helps verify your reasoning, earns partial credit if a mistake slips in, and deepens your understanding. For future assignments, be sure to write out each step, even when you’re confident in the result. \n\n**Actionable tip:** Before submitting, review your answer and add a brief line‑by‑line explanation of how you solved the problem.",
       "improvement": {
         "weak_points": [
           "No major weak areas detected — keep it up."
         ],
-        "narrative": "- Continue challenging yourself with advanced topics and deeper research.  \n- Seek leadership roles in group projects or clubs to broaden impact.  \n- Maintain a balanced study routine and regular self‑reflection to sustain growth."
+        "narrative": "- Keep up your steady study routine and periodically review material to reinforce long‑term retention.  \n- Challenge yourself with advanced topics or extracurricular projects to deepen expertise and stay motivated.  \n- Share your knowledge by tutoring peers or joining study groups; teaching reinforces your own understanding."
       }
     }
   },

@@ -3,13 +3,21 @@ main.py
 Command-line entry point.
 
 Usage:
-    python main.py code    # grade sample programming submissions
-    python main.py math    # grade sample math submissions
-    python main.py all     # run both (default)
+    python main.py code          # fixed pipeline: code assignment
+    python main.py math          # fixed pipeline: math assignment
+    python main.py all           # fixed pipeline: both (default)
+    python main.py agentic-code  # tool-calling CoordinatorAgent: code
+    python main.py agentic-math  # tool-calling CoordinatorAgent: math
 
-Writes a full JSON report to report_<type>.json and prints a human-readable
-summary to stdout. Set the GROQ_API_KEY env var to get real LLM-written
-feedback instead of the offline mock text.
+Outputs per run:
+  - Terminal summary
+  - report_<type>.json          raw pipeline report
+  - report_<type>_prescribed.json   prescribed report format
+  - report_<type>_prescribed.md     prescribed report as Markdown
+
+Set GROQ_API_KEY (free at https://console.groq.com) for real LLM responses.
+Without it the system runs fully in mock mode — all agents work, feedback
+is placeholder text.
 """
 
 import sys
@@ -20,6 +28,7 @@ import glob
 from orchestrator import GradingOrchestrator
 from agents.coordinator_agent import CoordinatorAgent
 from utils import pretty
+from report_formatter import build_report, to_markdown
 
 BASE = os.path.dirname(os.path.abspath(__file__))
 
@@ -39,19 +48,37 @@ def load_math_submissions():
 
 
 def print_summary(report: dict):
-    print(f"\n=== {report['assignment_type'].upper()} ASSIGNMENT REPORT ===\n")
+    print(f"\n{'='*60}")
+    print(f"  {report['assignment_type'].upper()} ASSIGNMENT REPORT")
+    print(f"{'='*60}\n")
     for sid, data in report["students"].items():
         g = data["grading"]
-        print(f"--- {sid} ---")
-        print(f"Score: {g['score_pct']}%")
-        print(f"Feedback:\n{data['feedback']}\n")
-        print(f"Improvement:\n{data['improvement']['narrative']}\n")
+        print(f"[ {sid} ]")
+        print(f"  Score          : {g['score_pct']}%")
+        print(f"  Feedback       :\n    {data['feedback'].strip()}\n")
+        print(f"  Improvement    :\n    {data['improvement']['narrative'].strip()}\n")
 
-    print("--- Plagiarism flags (sorted by similarity) ---")
+    print("Plagiarism flags (sorted by similarity):")
     for flag in report["plagiarism_flags"]:
         marker = "⚠️  FLAGGED" if flag["flagged"] else "ok"
-        print(f"{flag['pair'][0]} vs {flag['pair'][1]}: similarity={flag['similarity']}  [{marker}]")
+        print(f"  {flag['pair'][0]} vs {flag['pair'][1]}: "
+              f"similarity={flag['similarity']}  [{marker}]")
     print()
+
+
+def _write_prescribed(raw_report: dict, assignment_title: str, slug: str):
+    """Build and write the prescribed format JSON + Markdown reports."""
+    prescribed = build_report(raw_report, assignment_title)
+
+    json_path = os.path.join(BASE, f"report_{slug}_prescribed.json")
+    with open(json_path, "w", encoding="utf-8") as f:
+        f.write(pretty(prescribed))
+    print(f"Prescribed JSON report  → {json_path}")
+
+    md_path = os.path.join(BASE, f"report_{slug}_prescribed.md")
+    with open(md_path, "w", encoding="utf-8") as f:
+        f.write(to_markdown(prescribed))
+    print(f"Prescribed MD report    → {md_path}")
 
 
 def run_code():
@@ -62,10 +89,12 @@ def run_code():
     report = orch.run_code_assignment(load_code_submissions(), config["test_cases"])
     print_summary(report)
 
-    out_path = os.path.join(BASE, "report_code.json")
-    with open(out_path, "w", encoding="utf-8") as f:
+    raw_path = os.path.join(BASE, "report_code.json")
+    with open(raw_path, "w", encoding="utf-8") as f:
         f.write(pretty(report))
-    print(f"Full JSON report written to {out_path}")
+    print(f"Raw JSON report         → {raw_path}")
+
+    _write_prescribed(report, config["title"], "code")
     return report
 
 
@@ -77,19 +106,21 @@ def run_math():
     report = orch.run_math_assignment(load_math_submissions(), config["expected_answer"])
     print_summary(report)
 
-    out_path = os.path.join(BASE, "report_math.json")
-    with open(out_path, "w", encoding="utf-8") as f:
+    raw_path = os.path.join(BASE, "report_math.json")
+    with open(raw_path, "w", encoding="utf-8") as f:
         f.write(pretty(report))
-    print(f"Full JSON report written to {out_path}")
+    print(f"Raw JSON report         → {raw_path}")
+
+    _write_prescribed(report, config["title"], "math")
     return report
 
 
 def run_agentic(assignment_type: str):
     """
-    Demonstrates the tool-calling Coordinator agent: for each student in
-    the batch, spins up a CoordinatorAgent and lets it (autonomously, if
-    GROQ_API_KEY is set) decide which specialist-agent tools to call.
-    Prints the full tool-call trace so the decision sequence is visible.
+    Demonstrates the tool-calling CoordinatorAgent: for each student the
+    Groq LLM autonomously decides which specialist-agent tools to call and
+    in what order. Prints the full tool-call trace so the orchestration
+    decisions are visible (requirement #4).
     """
     if assignment_type == "code":
         with open(os.path.join(BASE, "assignments/code_assignment.json")) as f:
@@ -104,20 +135,22 @@ def run_agentic(assignment_type: str):
     all_results = {}
 
     for sid in submissions:
-        print(f"\n=== Coordinator agent run for {sid} ===")
+        print(f"\n{'='*60}")
+        print(f"  CoordinatorAgent run for: {sid}")
+        print(f"{'='*60}")
         result = coordinator.run(sid)
         all_results[sid] = result
 
-        print("Tool call trace:")
+        print("Tool-call trace:")
         for step in result["tool_trace"]:
-            print(f"  [{step['mode']}] {step['tool']}({step['input']})")
-        print(f"Agent's closing message: {result['agent_message']}")
-        print(f"Final score: {result['report'].get('score_pct')}%")
+            print(f"  [{step['mode']}] → {step['tool']}({json.dumps(step['input'])})")
+        print(f"Agent message : {result['agent_message']}")
+        print(f"Final score   : {result['report'].get('score_pct')}%")
 
     out_path = os.path.join(BASE, f"report_agentic_{assignment_type}.json")
     with open(out_path, "w", encoding="utf-8") as f:
         f.write(pretty(all_results))
-    print(f"\nFull agentic report + tool traces written to {out_path}")
+    print(f"\nAgentic report + tool traces → {out_path}")
     return all_results
 
 

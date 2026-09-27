@@ -1,63 +1,149 @@
 {
-  "assignment_type": "code",
-  "students": {
-    "student_A": {
-      "grading": {
-        "type": "code",
+  "report_metadata": {
+    "assignment_title": "Fibonacci Number (memoized)",
+    "assignment_type": "code",
+    "generated_at": "2026-09-27 22:39:44",
+    "total_students": 4,
+    "agents_used": [
+      "GradingAgent",
+      "PlagiarismAgent",
+      "FeedbackAgent",
+      "ImprovementAgent",
+      "CoordinatorAgent (orchestrator)"
+    ],
+    "framework": "Pure Python + Groq API (tool-calling)"
+  },
+  "summary_table": [
+    {
+      "student_id": "student_A",
+      "score_pct": 100.0,
+      "plagiarism_status": "FLAGGED (similarity with student_B)"
+    },
+    {
+      "student_id": "student_B",
+      "score_pct": 100.0,
+      "plagiarism_status": "FLAGGED (similarity with student_A)"
+    },
+    {
+      "student_id": "student_C",
+      "score_pct": 100.0,
+      "plagiarism_status": "Clean"
+    },
+    {
+      "student_id": "student_D",
+      "score_pct": 87.5,
+      "plagiarism_status": "Clean"
+    }
+  ],
+  "plagiarism_flags": [
+    {
+      "student_pair": [
+        "student_A",
+        "student_B"
+      ],
+      "similarity_score": 0.988,
+      "flagged": true
+    },
+    {
+      "student_pair": [
+        "student_C",
+        "student_D"
+      ],
+      "similarity_score": 0.274,
+      "flagged": false
+    },
+    {
+      "student_pair": [
+        "student_A",
+        "student_D"
+      ],
+      "similarity_score": 0.231,
+      "flagged": false
+    },
+    {
+      "student_pair": [
+        "student_B",
+        "student_D"
+      ],
+      "similarity_score": 0.23,
+      "flagged": false
+    },
+    {
+      "student_pair": [
+        "student_A",
+        "student_C"
+      ],
+      "similarity_score": 0.203,
+      "flagged": false
+    },
+    {
+      "student_pair": [
+        "student_B",
+        "student_C"
+      ],
+      "similarity_score": 0.202,
+      "flagged": false
+    }
+  ],
+  "student_reports": [
+    {
+      "student_id": "student_A",
+      "assignment_title": "Fibonacci Number (memoized)",
+      "score_pct": 100.0,
+      "grading_details": {
         "tests_passed": 8,
         "tests_total": 8,
-        "score_pct": 100.0,
-        "test_results": [
+        "per_test_breakdown": [
           {
-            "test": 1,
+            "test_number": 1,
             "passed": true,
             "expected": "0",
             "actual": "0"
           },
           {
-            "test": 2,
+            "test_number": 2,
             "passed": true,
             "expected": "1",
             "actual": "1"
           },
           {
-            "test": 3,
+            "test_number": 3,
             "passed": true,
             "expected": "1",
             "actual": "1"
           },
           {
-            "test": 4,
+            "test_number": 4,
             "passed": true,
             "expected": "5",
             "actual": "5"
           },
           {
-            "test": 5,
+            "test_number": 5,
             "passed": true,
             "expected": "55",
             "actual": "55"
           },
           {
-            "test": 6,
+            "test_number": 6,
             "passed": true,
             "expected": "6765",
             "actual": "6765"
           },
           {
-            "test": 7,
+            "test_number": 7,
             "passed": true,
             "expected": "9227465",
             "actual": "9227465"
           },
           {
-            "test": 8,
+            "test_number": 8,
             "passed": true,
             "expected": "12586269025",
             "actual": "12586269025"
           }
         ],
-        "static_checks": {
+        "static_analysis": {
           "has_function_def": true,
           "has_docstring_or_comments": true,
           "line_count": 13,
@@ -65,70 +151,70 @@
         }
       },
       "feedback": "Great job, student_A! Your solution passed every test (8/8) and meets the static‑check requirements: you defined a function, included helpful comments/docstrings, avoided bare‑except clauses, and kept the file concise (13 lines). The code is clean, well‑structured, and demonstrates solid understanding of the problem.\n\n**Tip:** Add type hints to your function signature and variables. This will make your code even clearer to readers and help catch type‑related bugs early.",
-      "improvement": {
-        "weak_points": [
-          "No major weak areas detected — keep it up."
-        ],
-        "narrative": "- Continue setting clear, short‑term goals to maintain momentum and track progress.  \n- Seek occasional feedback from peers or mentors to catch any subtle blind spots early.  \n- Explore a new extracurricular or research project to broaden skills and keep learning fresh."
-      }
+      "improvement_suggestions": [
+        "No major weak areas detected — keep it up."
+      ],
+      "improvement_narrative": "- Continue setting clear, short‑term goals to maintain momentum and track progress.  \n- Seek occasional feedback from peers or mentors to catch any subtle blind spots early.  \n- Explore a new extracurricular or research project to broaden skills and keep learning fresh.",
+      "plagiarism_status": "FLAGGED (similarity with student_B)"
     },
-    "student_B": {
-      "grading": {
-        "type": "code",
+    {
+      "student_id": "student_B",
+      "assignment_title": "Fibonacci Number (memoized)",
+      "score_pct": 100.0,
+      "grading_details": {
         "tests_passed": 8,
         "tests_total": 8,
-        "score_pct": 100.0,
-        "test_results": [
+        "per_test_breakdown": [
           {
-            "test": 1,
+            "test_number": 1,
             "passed": true,
             "expected": "0",
             "actual": "0"
           },
           {
-            "test": 2,
+            "test_number": 2,
             "passed": true,
             "expected": "1",
             "actual": "1"
           },
           {
-            "test": 3,
+            "test_number": 3,
             "passed": true,
             "expected": "1",
             "actual": "1"
           },
           {
-            "test": 4,
+            "test_number": 4,
             "passed": true,
             "expected": "5",
             "actual": "5"
           },
           {
-            "test": 5,
+            "test_number": 5,
             "passed": true,
             "expected": "55",
             "actual": "55"
           },
           {
-            "test": 6,
+            "test_number": 6,
             "passed": true,
             "expected": "6765",
             "actual": "6765"
           },
           {
-            "test": 7,
+            "test_number": 7,
             "passed": true,
             "expected": "9227465",
             "actual": "9227465"
           },
           {
-            "test": 8,
+            "test_number": 8,
             "passed": true,
             "expected": "12586269025",
             "actual": "12586269025"
           }
         ],
-        "static_checks": {
+        "static_analysis": {
           "has_function_def": true,
           "has_docstring_or_comments": true,
           "line_count": 13,
@@ -136,70 +222,70 @@
         }
       },
       "feedback": "Great job! All eight tests passed and your static check shows a clean implementation: you defined a function, included helpful documentation/comments, kept the file short (13 lines), and avoided bare‑except clauses. Your code is concise, readable, and well‑structured.\n\n**Next step:** enhance readability and robustness even further by adding type hints to your function signature and variables. This will make your intent clearer to others (and to static analysis tools) and help catch subtle bugs early. Keep up the excellent work!",
-      "improvement": {
-        "weak_points": [
-          "No major weak areas detected — keep it up."
-        ],
-        "narrative": "- Set a modest, specific goal each semester (e.g., a new skill, research project, or leadership role) to keep momentum.  \n- Continue regular self‑reflection: spend a few minutes after each class or assignment noting what went well and any minor tweaks.  \n- Seek occasional feedback from professors or peers to catch hidden opportunities for growth.  \n- Maintain a balanced routine—steady study habits, healthy sleep, and brief breaks—to sustain your strong performance."
-      }
+      "improvement_suggestions": [
+        "No major weak areas detected — keep it up."
+      ],
+      "improvement_narrative": "- Set a modest, specific goal each semester (e.g., a new skill, research project, or leadership role) to keep momentum.  \n- Continue regular self‑reflection: spend a few minutes after each class or assignment noting what went well and any minor tweaks.  \n- Seek occasional feedback from professors or peers to catch hidden opportunities for growth.  \n- Maintain a balanced routine—steady study habits, healthy sleep, and brief breaks—to sustain your strong performance.",
+      "plagiarism_status": "FLAGGED (similarity with student_A)"
     },
-    "student_C": {
-      "grading": {
-        "type": "code",
+    {
+      "student_id": "student_C",
+      "assignment_title": "Fibonacci Number (memoized)",
+      "score_pct": 100.0,
+      "grading_details": {
         "tests_passed": 8,
         "tests_total": 8,
-        "score_pct": 100.0,
-        "test_results": [
+        "per_test_breakdown": [
           {
-            "test": 1,
+            "test_number": 1,
             "passed": true,
             "expected": "0",
             "actual": "0"
           },
           {
-            "test": 2,
+            "test_number": 2,
             "passed": true,
             "expected": "1",
             "actual": "1"
           },
           {
-            "test": 3,
+            "test_number": 3,
             "passed": true,
             "expected": "1",
             "actual": "1"
           },
           {
-            "test": 4,
+            "test_number": 4,
             "passed": true,
             "expected": "5",
             "actual": "5"
           },
           {
-            "test": 5,
+            "test_number": 5,
             "passed": true,
             "expected": "55",
             "actual": "55"
           },
           {
-            "test": 6,
+            "test_number": 6,
             "passed": true,
             "expected": "6765",
             "actual": "6765"
           },
           {
-            "test": 7,
+            "test_number": 7,
             "passed": true,
             "expected": "9227465",
             "actual": "9227465"
           },
           {
-            "test": 8,
+            "test_number": 8,
             "passed": true,
             "expected": "12586269025",
             "actual": "12586269025"
           }
         ],
-        "static_checks": {
+        "static_analysis": {
           "has_function_def": true,
           "has_docstring_or_comments": true,
           "line_count": 10,
@@ -207,70 +293,70 @@
         }
       },
       "feedback": "Great job, **student_C**—you passed every test (8/8) and met all static‑check criteria: a proper function definition, documentation, concise code (10 lines), and no bare‑except clauses. Your implementation is clean, well‑structured, and reliably handles the required cases. To push your work even further, consider adding type hints to your function signature and internal variables. This will make your code self‑documenting and easier to maintain, especially as the project grows. Keep up the excellent work!",
-      "improvement": {
-        "weak_points": [
-          "No major weak areas detected — keep it up."
-        ],
-        "narrative": "- Set a short‑term personal goal (e.g., mastering a new tool or reading a research article each week) to keep momentum.  \n- Share your strengths by mentoring a peer or leading a small group project.  \n- Schedule a monthly reflection to track progress and adjust your study strategies."
-      }
+      "improvement_suggestions": [
+        "No major weak areas detected — keep it up."
+      ],
+      "improvement_narrative": "- Set a short‑term personal goal (e.g., mastering a new tool or reading a research article each week) to keep momentum.  \n- Share your strengths by mentoring a peer or leading a small group project.  \n- Schedule a monthly reflection to track progress and adjust your study strategies.",
+      "plagiarism_status": "Clean"
     },
-    "student_D": {
-      "grading": {
-        "type": "code",
+    {
+      "student_id": "student_D",
+      "assignment_title": "Fibonacci Number (memoized)",
+      "score_pct": 87.5,
+      "grading_details": {
         "tests_passed": 7,
         "tests_total": 8,
-        "score_pct": 87.5,
-        "test_results": [
+        "per_test_breakdown": [
           {
-            "test": 1,
+            "test_number": 1,
             "passed": true,
             "expected": "0",
             "actual": "0"
           },
           {
-            "test": 2,
+            "test_number": 2,
             "passed": true,
             "expected": "1",
             "actual": "1"
           },
           {
-            "test": 3,
+            "test_number": 3,
             "passed": true,
             "expected": "1",
             "actual": "1"
           },
           {
-            "test": 4,
+            "test_number": 4,
             "passed": true,
             "expected": "5",
             "actual": "5"
           },
           {
-            "test": 5,
+            "test_number": 5,
             "passed": true,
             "expected": "55",
             "actual": "55"
           },
           {
-            "test": 6,
+            "test_number": 6,
             "passed": true,
             "expected": "6765",
             "actual": "6765"
           },
           {
-            "test": 7,
+            "test_number": 7,
             "passed": true,
             "expected": "9227465",
             "actual": "9227465"
           },
           {
-            "test": 8,
+            "test_number": 8,
             "passed": false,
             "expected": "12586269025",
             "actual": "TIMEOUT"
           }
         ],
-        "static_checks": {
+        "static_analysis": {
           "has_function_def": true,
           "has_docstring_or_comments": true,
           "line_count": 9,
@@ -278,62 +364,11 @@
         }
       },
       "feedback": "Great job overall—passing 7 out of 8 tests and meeting the static‑check criteria (function defined, docstring present, no bare `except`). The only hiccup was **Test 8**, which expects the 50th Fibonacci number `12586269025` but timed out. This suggests the algorithm isn’t efficient enough for large inputs (likely exponential recursion).  \n\n**Actionable tip:** Replace the naïve recursive implementation with an iterative loop or memoized recursion (e.g., using a cache or Python’s `functools.lru_cache`) to compute Fibonacci numbers in O(n) time. This will eliminate the timeout.",
-      "improvement": {
-        "weak_points": [
-          "Efficiency / algorithm complexity (your solution may be too slow for large inputs)."
-        ],
-        "narrative": "- Review big‑O notation and practice estimating running times for common patterns (loops, recursion, nested structures).  \n- Master core data structures and algorithms (hash tables, heaps, divide‑and‑conquer, graph traversals) through focused problem sets on platforms like LeetCode or Codeforces.  \n- After coding, profile your solution on large test cases, identify bottlenecks, and iteratively refactor or replace them with more optimal approaches."
-      }
-    }
-  },
-  "plagiarism_flags": [
-    {
-      "pair": [
-        "student_A",
-        "student_B"
+      "improvement_suggestions": [
+        "Efficiency / algorithm complexity (your solution may be too slow for large inputs)."
       ],
-      "similarity": 0.988,
-      "flagged": true
-    },
-    {
-      "pair": [
-        "student_C",
-        "student_D"
-      ],
-      "similarity": 0.274,
-      "flagged": false
-    },
-    {
-      "pair": [
-        "student_A",
-        "student_D"
-      ],
-      "similarity": 0.231,
-      "flagged": false
-    },
-    {
-      "pair": [
-        "student_B",
-        "student_D"
-      ],
-      "similarity": 0.23,
-      "flagged": false
-    },
-    {
-      "pair": [
-        "student_A",
-        "student_C"
-      ],
-      "similarity": 0.203,
-      "flagged": false
-    },
-    {
-      "pair": [
-        "student_B",
-        "student_C"
-      ],
-      "similarity": 0.202,
-      "flagged": false
+      "improvement_narrative": "- Review big‑O notation and practice estimating running times for common patterns (loops, recursion, nested structures).  \n- Master core data structures and algorithms (hash tables, heaps, divide‑and‑conquer, graph traversals) through focused problem sets on platforms like LeetCode or Codeforces.  \n- After coding, profile your solution on large test cases, identify bottlenecks, and iteratively refactor or replace them with more optimal approaches.",
+      "plagiarism_status": "Clean"
     }
   ]
 }
